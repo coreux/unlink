@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<refentry xml:id="unlink-1" xmlns="http://docbook.org/ns" version="5.0" xml:lang="en">
+  <info>
+	<title>User Commands</title>
+	<productname>System Manager's Manual</productname>
+	<authorgroup>
+	  <author>
+		<personname>
+		  <firstname>Mo</firstname>
+		  <surname>McRoberts</surname>
+		</personname>
+	  </author>
+	</authorgroup>
+	<copyright>
+	  <year>2012</year>
+	  <holder>Mo McRoberts</holder>
+	</copyright>
+  </info>
+  
+  <refmeta>
+	<refentrytitle>unlink</refentrytitle>
+	<manvolnum>1</manvolnum>
+  </refmeta>
+  
+  <refnamediv>
+	<refname>unlink</refname>
+	<refpurpose>remove a directory entry</refpurpose>
+  </refnamediv>
+  
+  <refsynopsisdiv>
+	<cmdsynopsis>
+	  <command>unlink</command>
+	  <arg choice="plain"><option>file</option></arg>
+	</cmdsynopsis>
+  </refsynopsisdiv>
+  
+  <refsect1>
+	<title>Description</title>
+	<para>
+	  The <command>unlink</command> command removes a directory entry, specified
+	  as <option>file</option>. If the directory entry cannot be removed for
+	  any reason, a diagnostic message is printed.
+	</para>
+  </refsect1>
+  
+  <refsect1>
+	<title>Operands</title>
+	<variablelist>
+
+	  <varlistentry>
+		<term><option>file</option></term>
+		<listitem>
+		  <para>
+			The pathname of a directory entry which is to be removed.
+		  </para>
+		</listitem>
+	  </varlistentry>
+
+	</variablelist>
+  </refsect1>
+
+  <refsect1>
+	<title>Diagnostics</title>
+	<para>
+	  The following error values are returned:
+	</para>
+	<segmentedlist>
+	  <segtitle>Error value</segtitle>
+	  <segtitle>Diagnostic</segtitle>
+	  <seglistitem>
+		<seg><errorcode>0</errorcode></seg>
+		<seg>Successful completion.</seg>
+	  </seglistitem>
+	  <seglistitem>
+		<seg><errorcode>&gt;0</errorcode></seg>
+		<seg>An error occurred.</seg>
+	  </seglistitem>
+	</segmentedlist>
+  </refsect1>
+
+  <refsect1>
+	<title>Note</title>
+	<para>
+	  On many systems, the <command>unlink</command> command cannot be used
+	  to remove directories.
+	</para>
+  </refsect1>
+	  
+
+  <refsect1>
+	<title>Standards</title>
+	<para>
+	  The <command>link</command> utility conforms to the
+	  <citetitle>Single UNIX Specification, Version 3 (SUSv3)</citetitle>, and
+	  the <citetitle>X/Open System Interfaces Extension (XSI)</citetitle>.
+	</para>
+  </refsect1>
+
+  <refsect1>
+	<title>See also</title>
+	<para>
+	  <citerefentry>
+		<refentrytitle>rm</refentrytitle>
+		<manvolnum>1</manvolnum>
+	  </citerefentry>,
+	  <citerefentry>
+		<refentrytitle>rmdir</refentrytitle>
+		<manvolnum>1</manvolnum>
+	  </citerefentry>,
+	  <citerefentry>
+		<refentrytitle>link</refentrytitle>
+		<manvolnum>1</manvolnum>
+	  </citerefentry>,
+	  <citerefentry>
+		<refentrytitle>unlink</refentrytitle>
+		<manvolnum>2</manvolnum>
+	  </citerefentry>.
+	</para>
+  </refsect1>
+
+</refentry>
